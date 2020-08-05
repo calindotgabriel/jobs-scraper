@@ -1,13 +1,28 @@
 .home {
-	padding: 20px;
-	min-height: 100%;
-	width: 100%;
+    padding: 20px;
+    min-width: 600px;
+}
+
+
+.containerCard {
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+.card {
+    width: 17vw;
+    margin: 12px;
+    min-width: 200px;
 }
 
 .cardHeader {
-  padding: 16px;
+    padding: 16px;
+    font-weight: 600;
 }
 
 .cardBody {
-  padding: 16px;
+    padding: 0 0 16px 16px;
 }
