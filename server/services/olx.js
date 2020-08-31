@@ -28,8 +28,10 @@ xray(URL, 'body@html')((err, html) => {
 });
 
 
-function scrape() {
-    return xray(URL, '.offer', [{
+function scrape({town}) {
+    const url = town ? URL + '/' + town : URL;
+    console.log({url});
+    return xray(url, '.offer', [{
         title: '.linkWithHash | trim',
         city: '.bottom-cell .breadcrumb span',
         price: '.list-item__price .price-label | trim',

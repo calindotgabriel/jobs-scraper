@@ -1,8 +1,8 @@
 const olx = require('./olx');
 
 module.exports = {
-    async get() {
-        const jobs = await olx.scrape();
+    async get(filter) {
+        const jobs = await olx.scrape(filter);
         console.log({jobs});
         return jobs;
     }
