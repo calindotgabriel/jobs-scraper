@@ -1,5 +1,5 @@
 const fs = require('fs');
-const Xray = require('x-ray')
+const Xray = require('x-ray');
 
 const URL = 'https://www.olx.ro/locuri-de-munca/';
 
@@ -43,8 +43,8 @@ function scrape() {
             // console.log({data})
             data.forEach((d, i) => d.no = i);
             // data.map((d, i) => console.log(i))
-            write(JSON.stringify(data, null, 2), 'results.json');
-            console.log('Write JSON Success.');
+            // write(JSON.stringify(data, null, 2), 'results.json');
+            // console.log('Write JSON Success.');
             return data;
         });
 }

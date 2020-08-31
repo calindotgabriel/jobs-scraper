@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node scraper.js", 
+    "start": "DEBUG=server:* node ./server/bin/www",
+    "dev": "DEBUG=server:* nodemon ./server/bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
